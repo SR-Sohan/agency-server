@@ -153,6 +153,11 @@ client.connect(err => {
       .then(result => {
           res.send(result.modifiedCount > 0);
       })
+    });
+
+    //Blank api
+    app.get('/',(req,res)=>{
+      res.send('Heroku conected')
     })
 
 
